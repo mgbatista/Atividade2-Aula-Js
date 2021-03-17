@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>5by5 Cadastro</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="myCep.js"></script>
+        <link rel="stylesheet" href="myScript.js">
+        
+    </head>
+    <body>
+        <div id="t04">
+            <img id="img2" src="https://media-exp1.licdn.com/dms/image/C4D0BAQHRoqxlgTvqhQ/company-logo_200_200/0/1577454653977?e=2159024400&v=beta&t=C0mUTqmnpfkb8M88ClaqPExaCJ_I5k51q0m5Juinpbs" alt="Logo Empresa">   
+        </div>
+
+        <div id="t05">
+            <form action="">
+            <h2>Novo Cadastro</h2>
+            <label for="id">Id</label><br>
+            <input type="number" id="id" placeholder="1"><br>
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" placeholder="Silvio Santos"><br>
+            <label for="telefone">Telefone</label><br>
+            <input type="text" id="telefone" placeholder="3382-8888"><br>
+            
+            <label for="cep">CEP</label><br>
+            <input type="text" id="cep" placeholder="14801700">
+            <button type="button" id="btns" onclick="findCEP()">Localizar</button><br>
+
+            <label for="logradouro">Logradouro</label><br>
+            <input type="text" id="logradouro" placeholder="Avenida Batista"><br>
+            <label for="numero">Numero</label><br>
+            <input type="number" id="numero" placeholder="10"><br>
+            <label for="bairro">Bairro</label><br>
+            <input type="text" id="bairro" placeholder="Vila Pereira"><br>
+            <label for="localidade">Localidade</label><br>
+            <input type="text" id="localidade" placeholder="Araraquara"><br>
+            <label for="uf">UF</label><br>
+            <input type="text" id="uf" placeholder="SP"><br>
+            <label for="salario">Salário</label><br>
+            <input type="number" id="salario" placeholder="1000,00"><br>
+            <label for="estadoCivil">Estado Cívil</label><br>
+            <input type="text" id="estadoCivil" placeholder="Solteiro, Casado"><br>
+            <label for="idade">Idade</label><br>
+            <input type="number" id="idade" placeholder="60"><br>
+            <br> 
+            <button type="button" id="btns" onclick="getValuesFromForm()">Cadastrar</button>
+            
+            
+            </form>
+
+            <p id="cadastroStatus"></p>
+            <p id="imposto"></p>
+            <!--style="display: none;"-->
+            <div id="t06">
+                <p>Imprimir Cadastro</p>
+                <button onclick="window.print()">Imprimir</button>
+                
+            </div>
+            
+        </div>
+
+
+        
+        
+    </body>
+</html>
